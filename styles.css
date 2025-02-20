@@ -203,3 +203,12 @@ body {
     font-size: 16px;
 }
 
+/* Buy Section */
+.buySection{
+    display: flex;
+    justify-content: center;
+}
+.buyBtn{
+    margin: auto;
+}
+
