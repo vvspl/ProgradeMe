@@ -1,0 +1,205 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Хедер */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #37474f;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header .logo span {
+    color: #81d4fa;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 20px;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+    background: linear-gradient(to right, #b3e5fc, #81d4fa);
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.hero-content span {
+    color: #01579b;
+    font-weight: bold;
+}
+
+.hero-image img {
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Эффект параллакса */
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.parallax.hero {
+    background-image: url('hero-image.jpg');
+}
+
+.parallax.about {
+    background-image: url('about-image.jpg');
+}
+
+.parallax.portfolio {
+    background-image: url('portfolio-image.jpg');
+}
+
+/* About Section */
+.about {
+    padding: 60px 50px;
+    text-align: center;
+    background-color: rgba(236, 239, 241, 0.8);
+}
+
+.about h2 {
+    color: #01579b;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #37474f;
+    line-height: 1.6;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 60px 50px;
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
+.portfolio h2 {
+    text-align: center;
+    color: #01579b;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    max-width: 220px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #37474f;
+}
+
+/* Skills Section */
+.skills {
+    padding: 60px 50px;
+    background: linear-gradient(to right, #81d4fa, #b3e5fc);
+    color: #ffffff;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    background-color: #01579b;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #37474f;
+    color: #ffffff;
+    font-size: 16px;
+}
+
